@@ -2,15 +2,16 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Okul
+namespace School
 {
-    class Ödev
+    public class Homework
     {
-        public string Ad { get; set; }
-        public string Konu { get; set; }
-        public DateTime TeslimTarihi { get; set; }
-        public string ID { get; set; }
-        public Öğretmen Öğretmen { get; set; }
-        public int ÖğretmenId { get; set; }
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Subject { get; set; }
+        public DateTime Deadline { get; set; }
+        public int TeacherId { get; set; }
+        public Teacher Teacher { get; set; }
+        public List<ClassHomework> ClassHomeworks { get; set; }
     }
 }

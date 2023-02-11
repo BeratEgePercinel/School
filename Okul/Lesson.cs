@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Okul
+namespace School
 {
-    class Ders
+    public class Lesson
     {
-        public string Ad { get; set; }
-        public string ID { get; set; }
-        public string ÖnemDerecesi { get; set; }
-        public int Kod { get; set; }
-        public Öğrenci Öğrenci { get; set; }
-        public int ÖğrenciId { get; set; }
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Priority { get; set; }
+        public string Code { get; set; }
+        public List<Teacher> Teachers { get; set; }
+        public List<ClassLesson> ClassLessons { get; set; }
     }
 }
